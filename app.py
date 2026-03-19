@@ -19,7 +19,7 @@ import chat_engine
 load_dotenv()
 
 # ── Configuración de página ────────────────────────────────────
-st.set_page_config(page_title="Asistente Estadístico SIRTOD", page_icon="🇵🇪", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="Asistente Estadístico", page_icon="🇵🇪", layout="wide", initial_sidebar_state="expanded")
 
 try:
     logo_path = os.path.join(os.path.dirname(__file__), "assets", "logo_inei.png")
@@ -134,6 +134,15 @@ if is_intro:
         margin: 0;
         letter-spacing: -2px;
     }}
+    .splash-text h2 {{
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: #4a5568;
+        margin-top: 1.2rem;
+        margin-bottom: 0;
+        line-height: 1.2;
+    }}
     .square-bullet {{
         width: 2.5rem;
         height: 2.5rem;
@@ -192,7 +201,8 @@ if is_intro:
     
     <div class="splash-container">
         <div class="splash-text">
-            <h1>Asistente<br>estadístico<br>SIRTOD.</h1>
+            <h1>Asistente<br>Estadístico.</h1>
+            <h2>Más de 15 millones de datos consultados.</h2>
             <div class="square-bullet"></div>
         </div>
         <div class="splash-shapes">
@@ -209,7 +219,7 @@ if is_intro:
     """, unsafe_allow_html=True)
 else:
     # ── Título y descripción (Vista Chat Normal) ───────────────────
-    st.title("Asistente Estadístico SIRTOD")
+    st.title("Asistente Estadístico")
     st.markdown("Bienvenido al sistema de consultas conversacional del **Instituto Nacional de Estadística e Informática (INEI)**. "
                 "Realice sus preguntas sobre datos estadísticos del Perú y reciba información oficial y actualizada.")
 
