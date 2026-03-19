@@ -33,12 +33,12 @@ st.markdown("""
     footer {visibility: hidden;}
     .stChatInput {padding-bottom: 2rem;}
     
-    /* Agrandar logo y volver transparente su fondo blanco (Tamaño Triple) */
+    /* Agrandar logo saltándose la restricción de altura de Streamlit */
     [data-testid="stLogo"] {
-        height: 10.5rem !important;
-        width: 100% !important;
-        object-fit: contain !important;
         mix-blend-mode: multiply;
+        transform: scale(3) !important;
+        transform-origin: left center !important;
+        margin-left: 10px !important;
     }
 </style>
 """, unsafe_allow_html=True)
