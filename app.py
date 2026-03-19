@@ -33,9 +33,11 @@ st.markdown("""
     footer {visibility: hidden;}
     .stChatInput {padding-bottom: 2rem;}
     
-    /* Agrandar logo y volver transparente su fondo blanco */
+    /* Agrandar logo y volver transparente su fondo blanco (Tamaño Triple) */
     [data-testid="stLogo"] {
-        height: 3.5rem !important;
+        height: 10.5rem !important;
+        width: 100% !important;
+        object-fit: contain !important;
         mix-blend-mode: multiply;
     }
 </style>
