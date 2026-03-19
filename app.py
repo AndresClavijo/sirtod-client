@@ -32,6 +32,12 @@ st.markdown("""
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     .stChatInput {padding-bottom: 2rem;}
+    
+    /* Agrandar logo y volver transparente su fondo blanco */
+    [data-testid="stLogo"] {
+        height: 3.5rem !important;
+        mix-blend-mode: multiply;
+    }
 </style>
 """, unsafe_allow_html=True)
 
