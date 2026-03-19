@@ -19,10 +19,11 @@ import chat_engine
 load_dotenv()
 
 # ── Configuración de página ────────────────────────────────────
-st.set_page_config(page_title="Asistente Estadístico SIRTOD", page_icon="🇵🇪", layout="wide")
+st.set_page_config(page_title="Asistente Estadístico SIRTOD", page_icon="🇵🇪", layout="wide", initial_sidebar_state="expanded")
 
 try:
-    st.logo("https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_INEI.png")
+    logo_path = os.path.join(os.path.dirname(__file__), "assets", "logo_inei.png")
+    st.logo(logo_path)
 except AttributeError:
     pass
 
@@ -30,7 +31,6 @@ st.markdown("""
 <style>
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
-    header {visibility: hidden;}
     .stChatInput {padding-bottom: 2rem;}
 </style>
 """, unsafe_allow_html=True)
