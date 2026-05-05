@@ -15,7 +15,7 @@ from fastmcp import Client
 from openai import OpenAI
 
 # ── Constantes ─────────────────────────────────────────────────
-OPENAI_MODEL: str = "gpt-4o-mini"
+OPENAI_MODEL: str = "gpt-5-mini"
 
 MAX_ITERATIONS: int = 15
 
